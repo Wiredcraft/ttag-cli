@@ -1,8 +1,9 @@
 {
-  "name": "ttag-cli",
-  "version": "1.7.28",
+  "name": "@wiredcraft/ttag-cli",
+  "version": "0.0.1",
+  "description": "Based on ttag-cli#1.7.28",
   "main": "index.js",
-  "repository": "git@github.com:ttag-org/ttag-cli.git",
+  "repository": "git+https://github.com/wiredcraft/ttag-cli.git",
   "author": "",
   "license": "MIT",
   "scripts": {
@@ -22,7 +23,7 @@
     ]
   },
   "bin": {
-    "ttag": "./bin/ttag"
+    "omni-i18n": "./bin/ttag"
   },
   "devDependencies": {
     "@types/babel__core": "7.1.2",
@@ -66,7 +67,7 @@
     "@babel/preset-typescript": "7.7.0",
     "@babel/template": "^7.4.4",
     "ansi": "^0.3.1",
-    "babel-plugin-ttag": "^1.7.24",
+    "@wiredcraft/babel-plugin-ttag": "^0.0.1",
     "chalk": "^2.4.2",
     "cross-spawn": "^5.1.0",
     "gettext-parser": "4.0.0-alpha.0",
