@@ -41,7 +41,7 @@ export async function extractAll(
         }
     };
     await pathsWalk(paths, progress, transformFn);
-    const result = fs.readFileSync(tmpFile.name).toString();
+    const result = fs.readFileSync(tmpFile.name).toString() + "\n";
     tmpFile.removeCallback();
     return result;
 }
