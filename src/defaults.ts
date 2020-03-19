@@ -10,7 +10,7 @@ import * as ttagTypes from "./types";
 import * as classPropPlugin from "@babel/plugin-proposal-class-properties";
 import * as restSpreadPlugin from "@babel/plugin-proposal-object-rest-spread";
 import * as exportDefaultFromPlugin from "@babel/plugin-proposal-export-default-from";
-import * as babelTtagPlugin from "@wiredcraft/babel-plugin-ttag";
+import * as babelTtagPlugin from "babel-plugin-ttag";
 import * as babelDynamicImportPlugin from "@babel/plugin-syntax-dynamic-import";
 import * as babelPluginDecorators from "@babel/plugin-proposal-decorators";
 import * as optionalChaningPlugin from "@babel/plugin-proposal-optional-chaining";

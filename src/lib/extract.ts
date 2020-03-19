@@ -17,7 +17,8 @@ export async function extractAll(
     let ttagOpts: ttagTypes.TtagOpts = {
         extract: { output: tmpFile.name },
         sortByMsgid: overrideOpts && overrideOpts.sortByMsgid,
-        addComments: true
+        addComments: true,
+        discover: ["t", "jt", "c", "ngettext", "gettext"]
     };
     if (lang !== "en") {
         ttagOpts.defaultLang = lang;

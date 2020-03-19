@@ -1294,21 +1294,6 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@wiredcraft/babel-plugin-ttag@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@wiredcraft/babel-plugin-ttag/-/babel-plugin-ttag-0.0.1.tgz#284e6099796cb754982494e4464065f281efcfb6"
-  integrity sha512-1qde7yaNk6jv69IQRGXLdR4bEpy85akwMfrrshJ4G4RuwZ00OTd9QQEGZQpHvXEZbCaL7A64Icqlm3QqnYXwwA==
-  dependencies:
-    "@babel/generator" "^7.0.0"
-    "@babel/template" "^7.0.0"
-    "@babel/types" "^7.0.0"
-    ajv "4.9.0"
-    babel-plugin-macros "^2.4.2"
-    dedent "0.6.0"
-    gettext-parser "4.0.0-alpha.0"
-    mkdirp "0.5.1"
-    plural-forms "0.3.3"
-
 abab@^2.0.0:
   version "2.0.3"
   resolved "https://registry.npm.taobao.org/abab/download/abab-2.0.3.tgz#623e2075e02eb2d3f2475e49f99c91846467907a"
@@ -1570,6 +1555,21 @@ babel-plugin-macros@^2.4.2:
     "@babel/runtime" "^7.7.2"
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
+
+babel-plugin-ttag@^1.7.24:
+  version "1.7.24"
+  resolved "https://registry.yarnpkg.com/babel-plugin-ttag/-/babel-plugin-ttag-1.7.24.tgz#833daff8bfefaa6b4436c293fc5ffd33ed7fab57"
+  integrity sha512-luwKNpdDH8piUkMq2oRsuG165b70aHU1si671/virxi0MLWZQ+S9/7A3rB+dAkNAJWkPHgi41nQWcZCBNbFG2Q==
+  dependencies:
+    "@babel/generator" "^7.0.0"
+    "@babel/template" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    ajv "4.9.0"
+    babel-plugin-macros "^2.4.2"
+    dedent "0.6.0"
+    gettext-parser "4.0.0-alpha.0"
+    mkdirp "0.5.1"
+    plural-forms "0.3.3"
 
 babel-preset-jest@^24.9.0:
   version "24.9.0"

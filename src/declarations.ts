@@ -3,7 +3,7 @@ declare module "cross-spawn";
 declare module "hunspell-spellchecker";
 declare module "gettext-parser";
 declare module "gettext-parser/lib/shared";
-declare module "@wiredcraft/babel-plugin-ttag";
+declare module "babel-plugin-ttag";
 declare module "@babel/preset-react";
 declare module "@babel/preset-env";
 declare module "@babel/plugin-proposal-class-properties";

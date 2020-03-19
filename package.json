@@ -1,6 +1,6 @@
 {
   "name": "@wiredcraft/ttag-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Based on ttag-cli#1.7.28",
   "main": "index.js",
   "repository": "git+https://github.com/wiredcraft/ttag-cli.git",
@@ -67,7 +67,7 @@
     "@babel/preset-typescript": "7.7.0",
     "@babel/template": "^7.4.4",
     "ansi": "^0.3.1",
-    "@wiredcraft/babel-plugin-ttag": "^0.0.1",
+    "babel-plugin-ttag": "^1.7.24",
     "chalk": "^2.4.2",
     "cross-spawn": "^5.1.0",
     "gettext-parser": "4.0.0-alpha.0",
