@@ -293,7 +293,7 @@ yargs
             format: {
                 description:
                     "sets the output JSON format (compact is much smaller)",
-                choices: ["compact", "verbose"],
+                choices: ["compact", "verbose", "nested"],
                 default: "verbose"
             }
         },

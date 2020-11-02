@@ -1,4 +1,4 @@
-import { parse, PoDataCompact, PoData } from "../lib/parser";
+import { parse, PoDataCompact, PoData, PoDataOmni } from "../lib/parser";
 import { iterateTranslations, convert2Compact } from "../lib/utils";
 import * as fs from "fs";
 
@@ -6,9 +6,9 @@ export default function po2json(
     path: string,
     pretty: boolean,
     nostrip: boolean,
-    format: "compact" | "verbose"
+    format: "compact" | "verbose" | "nested"
 ) {
-    let poData: PoData | PoDataCompact = parse(
+    let poData: PoData | PoDataCompact | PoDataOmni = parse(
         fs.readFileSync(path).toString()
     );
     const messages = iterateTranslations(poData.translations);
@@ -22,5 +22,11 @@ export default function po2json(
     if (format === "compact") {
         poData = convert2Compact(poData);
     }
+
+    if (format === "nested") {
+        const language: string = poData?.headers?.language || "en-US";
+        poData = { [language]: poData };
+    }
+
     process.stdout.write(JSON.stringify(poData, null, pretty ? 2 : 0));
 }
