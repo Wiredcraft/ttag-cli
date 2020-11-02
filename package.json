@@ -1,6 +1,6 @@
 {
   "name": "@wiredcraft/ttag-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Based on ttag-cli#1.7.28",
   "main": "index.js",
   "repository": "git+https://github.com/wiredcraft/ttag-cli.git",
