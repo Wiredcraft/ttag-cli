@@ -116,7 +116,18 @@ will parse and output po file as loadable JSON
 	--pretty  -p   pretty print js  (default: false)
 	--nostrip  --n   do not strip comments/headers  (default: false)
 	--format  sets the output JSON format (compact is much smaller)
-        [choices: "compact", "verbose"] [default: "verbose"]
+        [choices: "compact", "verbose", "nested"] [default: "verbose"]
+
+If `format` is "nested", the json will be nested under a field of which the key is the `language` field from the po. e.g., 
+```javascript
+{
+	"zh-CN": {
+		"headers": "",
+		// ...rest of the po json
+	}
+}
+```
+
 
 
 <!--- END COMMANDS --->

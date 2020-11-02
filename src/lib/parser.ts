@@ -42,6 +42,8 @@ export type PoDataCompact = {
     contexts: { [key: string]: { [key: string]: string[] } };
 };
 
+export type PoDataOmni = Record<string, PoData | PoDataCompact>;
+
 export function parse(str: string): PoData {
     return po.parse(str);
 }
